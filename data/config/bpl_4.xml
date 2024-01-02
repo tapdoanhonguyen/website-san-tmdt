@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>4</id>
+  <lang></lang>
+  <title>Banner trái</title>
+  <form>random</form>
+  <width>180</width>
+  <height>416</height>
+  <banners>
+    <banners_item>
+      <id>4</id>
+      <title>hang chính hãng</title>
+      <clid>2</clid>
+      <file_name>hang_chinh_hang.jpg</file_name>
+      <imageforswf></imageforswf>
+      <file_ext>jpg</file_ext>
+      <file_mime>image/jpeg</file_mime>
+      <file_width>360</file_width>
+      <file_height>832</file_height>
+      <file_alt></file_alt>
+      <file_click>https://bbo.vn/</file_click>
+      <target>_self</target>
+      <bannerhtml></bannerhtml>
+      <publ_time>1703834369</publ_time>
+      <exp_time>0</exp_time>
+    </banners_item>
+  </banners>
+</plan>

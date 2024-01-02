@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * @Project TMS Holdings
+ * @Author TMS Holdings <contact@tms.vn>
+ * @Copyright (C) 2019 TMS Holdings. All rights reserved
+ * @License: Not free read more http://tms.vn/vi/store/modules/nvtools/
+ * @Createdate Thu, 22 Aug 2019 14:58:08 GMT
+ */
+
+if (!defined('NV_MAINFILE')) {
+    die('Stop!!!');
+}
+
+if (!nv_function_exists('tms_shops_list')) {
+    /**
+     * @param string $module
+     * @param array $data_block
+     * @param array $lang_block
+     * @return string
+     */
+    function nvb_config_tms_shops_list($module, $data_block, $lang_block)
+    {
+        global $nv_Cache, $site_mods, $nv_Request;
+        $html .= '<div class="form-group">';
+        $html .= '<label class="control-label col-sm-6">Số sản phẩm hiển thị:</label>';
+        $html .= '<div class="col-sm-9"><select name="config_number_item" class="form-control">';
+        for ($i = 0; $i < 20; ++$i) {
+            $html .= '<option value="' . $i . '"' . ($data_block['number_item'] == $i ? ' selected="selected"' : '') . '> ' . $i . ' </option>';
+        }
+        $html .= "</select></div>";
+        $html .= '</div>';
+        $html .='<div class="form-group">';
+        $html .= '<label class="control-label col-sm-6">Tiêu đề block:</label>';
+        $html .= '<div class="col-sm-9"><input type="text" class="form-control" name="title_block" value="' . $data_block['title_block'] . '"/></div>';
+        $html .= '</div>';
+        $html .= '<div class="form-group">';
+        $html .= '  <label class="control-label col-sm-6">Mô tả</label>';
+        $html .= '  <div class="col-sm-18"><input type="text" name="hometext" class="form-control" value="' . $data_block['hometext'] . '"/></div>';
+        $html .= '</div>';
+
+        return $html;
+    }
+
+    /**
+     * @param string $module
+     * @param array $lang_block
+     * @return number
+     */
+    function nvb_config_tms_shops_list_submit($module, $lang_block)
+    {
+        global $nv_Request;
+
+        $return = array();
+        $return['error'] = array();
+        $return['config'] = array();
+        $return['config']['number_item'] = $nv_Request->get_int('config_number_item', 'post', 0);
+        $return['config']['title_block'] = $nv_Request->get_title('title_block', 'post', '');
+        $return['config']['hometext'] = $nv_Request->get_title('hometext', 'post');
+        return $return;
+    }
+
+    /**
+     * @param array $block_config
+     * @return string
+     */
+    function tms_shops_list($block_config)
+    {
+        global $nv_Cache, $global_config,$db_config, $site_mods, $module_info, $module_name, $module_file, $module_data, $lang_global, $catid, $home, $db,$user_info,$module_upload;
+
+        if (file_exists(NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/modules/' . $block_config['module'] . '/global.block_shops_list.tpl')) {
+            $block_theme = $global_config['module_theme'];
+        } elseif (file_exists(NV_ROOTDIR . '/themes/' . $global_config['site_theme'] . '/modules/' . $block_config['module'] . '/global.block_shops_list.tpl')) {
+            $block_theme = $global_config['site_theme'];
+        } else {
+            $block_theme = 'default';
+        }
+
+
+        $sql = 'SELECT * FROM '.$db_config['dbsystem']. '.'. NV_PREFIXLANG . '_' . $block_config['module'] . '_seller_management t1 INNER JOIN ' . $db_config['prefix'] . '_users t2 ON t1.userid = t2.userid  ORDER BY t1.time_add  DESC limit ' . $block_config['number_item'];
+        $list = $nv_Cache->db($sql, '', $block_config['module']);
+
+
+        $xtpl = new XTemplate('global.block_shops_list.tpl', NV_ROOTDIR . '/themes/' . $block_theme . '/modules/' . $block_config['module']);
+        $xtpl->assign('LANG', $lang_global);
+        $xtpl->assign('NV_BASE_SITEURL', NV_BASE_SITEURL);
+        $xtpl->assign('BLOCK_THEME', $block_theme);
+        $xtpl->assign('THEME_SITE_HREF', NV_BASE_SITEURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA);
+
+      foreach ($list as $key => $value_product) {
+		  
+		
+		if($value_product['avatar_image']){
+			$value_product['image'] = NV_BASE_SITEURL . NV_UPLOADS_DIR . '/' . $module_upload . '/image_shop/' . $value_product['avatar_image'];
+		}else{
+			$value_product['image'] = NV_BASE_SITEURL . NV_UPLOADS_DIR . '/no_img.png';
+		}
+		    $xtpl->assign( 'DATA', $value_product );
+		  	$xtpl->parse( 'main.loop' );
+	  }
+		
+		
+    
+
+    $xtpl->parse('main');
+    return $xtpl->text('main');
+}
+}
+
+if (defined('NV_SYSTEM')) {
+    $content = tms_shops_list($block_config);
+}

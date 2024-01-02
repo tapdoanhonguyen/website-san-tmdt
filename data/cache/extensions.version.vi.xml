@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cms>
+	<extension>
+		<id><![CDATA[19]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[banners]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module banners của hệ thống NukeViet]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/banners/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/banners/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[281]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[comment]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module Comment Module Comment]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/comment/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/comment/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[20]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[contact]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Module contact của hệ thống NukeViet]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/contact/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/contact/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[307]]></id>
+		<type><![CDATA[theme]]></type>
+		<name><![CDATA[default]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Giao diện mặc định]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/themes/default/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/themes/default/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[283]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[feeds]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module Feeds Module Feeds]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/feeds/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/feeds/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[home]]></name>
+		<version><![CDATA[4.3.06]]></version>
+		<date><![CDATA[Tue, 27 Jul 2021 00:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[TMS HOLDINGS (contact@tms.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[theme]]></type>
+		<name><![CDATA[irv-shop]]></name>
+		<version><![CDATA[4.4.02]]></version>
+		<date><![CDATA[Tue, 19 Dec 2023 08:03:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES.,JSC]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Đây là giao diện mặc định của hệ thống. Bạn không được xóa, đổi tên và không nên sửa trực tiếp vào giao diện này. Nếu muốn, hãy copy thành giao diện khác và kích hoạt sử dụng giao diện mới đó để chỉnh sửa và sử dụng.]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[location]]></name>
+		<version><![CDATA[4.3.03]]></version>
+		<date><![CDATA[Wed, 22 Dec 2021 07:05:25 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[TMS HOLDINGS (contact@tms.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Module địa điểm]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[29]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[menu]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Module menu của hệ thống NukeViet]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/menu/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/menu/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[311]]></id>
+		<type><![CDATA[theme]]></type>
+		<name><![CDATA[mobile_default]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Giao diện mặc định dành cho di động]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/themes/mobile-default/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/themes/mobile-default/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[1]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[news]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Module này được phát hành cùng hệ thống, luôn đi kèm trong các bản NukeViet mặc định.]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/news/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/news/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[notification]]></name>
+		<version><![CDATA[4.0.11]]></version>
+		<date><![CDATA[Wed, 17 Feb 2021 06:58:57 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES (contact@vinades.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[nvtools]]></name>
+		<version><![CDATA[4.0.24]]></version>
+		<date><![CDATA[Mon, 21 Dec 2020 02:01:30 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[TMS Holidngs (contact@tms.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Công cụ xây dựng site]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[282]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[page]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module Page Module Page Module Page]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/page/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/page/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[284]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[seek]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module Seek Module Seek Module Seek]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/seek/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/seek/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[shops]]></name>
+		<version><![CDATA[4.5.02]]></version>
+		<date><![CDATA[Tue, 19 Dec 2023 01:40:39 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES (contact@vinades.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[slider]]></name>
+		<version><![CDATA[4.0.29]]></version>
+		<date><![CDATA[Mon, 05 Apr 2021 03:36:18 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[DANGDINHTU (dlinhvan@gmail.com)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[27]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[statistics]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[Module statistics của hệ thống NukeViet]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/statistics/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/statistics/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[store]]></name>
+		<version><![CDATA[4.3.03]]></version>
+		<date><![CDATA[Mon, 21 Dec 2020 09:08:19 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[TMS Holdings (contact@tms.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[other]]></mode>
+		<message><![CDATA[]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[327]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[two-step-verification]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[GNU - GPL]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[two-step-verification two-step-verification]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/two-step-verification/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/two-step-verification/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[24]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[users]]></name>
+		<version><![CDATA[4.5.04]]></version>
+		<date><![CDATA[Fri, 21 Jul 2023 09:00:00 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES <contact@vinades.vn>]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Module users của hệ thống NukeViet]]></message>
+		<link><![CDATA[https://nukeviet.vn/vi/store/modules/users/]]></link>
+		<support><![CDATA[https://nukeviet.vn/vi/store/modules/users/]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[true]]></origin>
+	</extension>
+	<extension>
+		<id><![CDATA[0]]></id>
+		<type><![CDATA[module]]></type>
+		<name><![CDATA[wallet]]></name>
+		<version><![CDATA[4.3.01]]></version>
+		<date><![CDATA[Tue, 03 Apr 2018 02:31:06 GMT]]></date>
+		<new_version><![CDATA[]]></new_version>
+		<new_date><![CDATA[]]></new_date>
+		<author><![CDATA[VINADES (contact@vinades.vn)]]></author>
+		<license><![CDATA[]]></license>
+		<mode><![CDATA[sys]]></mode>
+		<message><![CDATA[Quản lý tiền thành viên]]></message>
+		<link><![CDATA[]]></link>
+		<support><![CDATA[]]></support>
+		<updateable>
+		</updateable>
+		<origin><![CDATA[false]]></origin>
+	</extension>
+</cms>

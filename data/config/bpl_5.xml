@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>5</id>
+  <lang></lang>
+  <title>Banner top giữa</title>
+  <form>random</form>
+  <width>655</width>
+  <height>250</height>
+  <banners>
+    <banners_item>
+      <id>5</id>
+      <title>sp one</title>
+      <clid>2</clid>
+      <file_name>sp_one_technology.png</file_name>
+      <imageforswf></imageforswf>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>655</file_width>
+      <file_height>250</file_height>
+      <file_alt></file_alt>
+      <file_click>https://bbo.vn/</file_click>
+      <target>_self</target>
+      <bannerhtml></bannerhtml>
+      <publ_time>1703835207</publ_time>
+      <exp_time>0</exp_time>
+    </banners_item>
+  </banners>
+</plan>
