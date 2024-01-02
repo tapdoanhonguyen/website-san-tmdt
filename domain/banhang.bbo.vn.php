@@ -17,7 +17,7 @@ if ( ! defined( 'NV_MAINFILE' ) )
 
 $db_config['dbsite'] = 'admin_reseller';
 						
-$db_config['dbsystem'] = 'admin_chonhagiau';
+$db_config['dbsystem'] = '';
                         
 $global_config['site_dir']= '/banhang';
                         
