@@ -54,8 +54,8 @@ function nv_mailHTML($title, $content, $footer = '')
  */
 function nv_get_submenu($mod)
 {
-    global $module_name, $global_config, $admin_mods, $lang_global;
-
+    global $module_name, $global_config, $admin_mods, $lang_global, $nv_Lang;
+	
     $submenu = [];
 
     if (file_exists(NV_ROOTDIR . '/' . NV_ADMINDIR . '/' . $mod . '/admin.menu.php')) {
@@ -67,9 +67,10 @@ function nv_get_submenu($mod)
         } elseif (file_exists(NV_ROOTDIR . '/includes/language/en/admin_' . $mod . '.php')) {
             include NV_ROOTDIR . '/includes/language/en/admin_' . $mod . '.php';
         }
-
+		$nv_Lang->loadModule($mod, true, true);
         include NV_ROOTDIR . '/' . NV_ADMINDIR . '/' . $mod . '/admin.menu.php';
         unset($lang_module);
+		$nv_Lang->changeLang();
     }
 
     return $submenu;
@@ -83,7 +84,7 @@ function nv_get_submenu($mod)
  */
 function nv_get_submenu_mod($module_name)
 {
-    global $lang_global, $global_config, $db, $site_mods, $admin_info, $db_config, $admin_mods;
+    global $lang_global, $global_config, $db, $site_mods, $admin_info, $db_config, $admin_mods, $nv_Lang;
 
     $submenu = [];
     if (isset($site_mods[$module_name])) {
@@ -99,9 +100,10 @@ function nv_get_submenu_mod($module_name)
             } elseif (file_exists(NV_ROOTDIR . '/modules/' . $module_file . '/language/admin_en.php')) {
                 include NV_ROOTDIR . '/modules/' . $module_file . '/language/admin_en.php';
             }
-
+			$nv_Lang->loadModule($module_file, false, true);
             include NV_ROOTDIR . '/modules/' . $module_file . '/admin.menu.php';
             unset($lang_module);
+			 $nv_Lang->changeLang();
         }
     }
 

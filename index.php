@@ -197,7 +197,7 @@ if (preg_match($global_config['check_module'], $module_name)) {
             } elseif (file_exists(NV_ROOTDIR . '/modules/' . $module_file . '/language/en.php')) {
                 require NV_ROOTDIR . '/modules/' . $module_file . '/language/en.php';
             }
-
+			$nv_Lang->loadModule($module_file);
             // Xem trước giao diện
             if (($nv_preview_theme = $nv_Request->get_title('nv_preview_theme_' . NV_LANG_DATA, 'session', '')) != '' and in_array($nv_preview_theme, $global_config['array_preview_theme'], true) and file_exists(NV_ROOTDIR . '/themes/' . $nv_preview_theme . '/theme.php')) {
                 if (preg_match($global_config['check_theme_mobile'], $nv_preview_theme)) {

@@ -96,6 +96,7 @@ if (preg_match($global_config['check_module'], $module_name)) {
         } elseif (file_exists(NV_ROOTDIR . '/modules/' . $module_file . '/language/admin_en.php')) {
             require NV_ROOTDIR . '/modules/' . $module_file . '/language/admin_en.php';
         }
+		 $nv_Lang->loadModule($module_file);
     } elseif (isset($admin_mods[$module_name])) {
         $module_info = $admin_mods[$module_name];
         if (md5($module_info['module'] . '#' . $module_info['act_1'] . '#' . $module_info['act_2'] . '#' . $module_info['act_3'] . '#' . $global_config['sitekey'])) {
@@ -103,8 +104,9 @@ if (preg_match($global_config['check_module'], $module_name)) {
             $include_functions = NV_ROOTDIR . '/' . NV_ADMINDIR . '/' . $module_file . '/functions.php';
             $include_menu = NV_ROOTDIR . '/' . NV_ADMINDIR . '/' . $module_file . '/admin.menu.php';
             $include_file = NV_ROOTDIR . '/' . NV_ADMINDIR . '/' . $module_file . '/' . $op . '.php';
-
+			
             // Ket noi voi file ngon ngu cua module
+			$nv_Lang->loadModule($module_file);
             if (file_exists(NV_ROOTDIR . '/includes/language/' . NV_LANG_INTERFACE . '/admin_' . $module_file . '.php')) {
                 require NV_ROOTDIR . '/includes/language/' . NV_LANG_INTERFACE . '/admin_' . $module_file . '.php';
             } elseif (file_exists(NV_ROOTDIR . '/includes/language/' . NV_LANG_DATA . '/admin_' . $module_file . '.php')) {
@@ -112,6 +114,7 @@ if (preg_match($global_config['check_module'], $module_name)) {
             } elseif (file_exists(NV_ROOTDIR . '/includes/language/en/admin_' . $module_file . '.php')) {
                 require NV_ROOTDIR . '/includes/language/en/admin_' . $module_file . '.php';
             }
+			 
         }
     }
 
@@ -179,7 +182,9 @@ if (preg_match($global_config['check_module'], $module_name)) {
                     $admin_menu_mods[$key] = $value['admin_title'];
                 }
             }
+			$nv_Lang->loadModule($module_file);
             require $include_file;
+			
             exit();
         }
         nv_info_die($lang_global['error_404_title'], $lang_global['error_404_title'], $lang_global['admin_no_allow_func'], 404);
